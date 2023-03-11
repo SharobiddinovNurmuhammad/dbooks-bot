@@ -1,6 +1,4 @@
-
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 
 def recent_books_list(books_data):
     recent_books = InlineKeyboardMarkup(row_width=5)
@@ -8,7 +6,6 @@ def recent_books_list(books_data):
                       for i in range(len(books_data))]
     recent_books.add(*inline_buttons)
     return recent_books
-
 
 def book_keyboard(url, download):
     recent_book_markup = InlineKeyboardMarkup(row_width=1)
